@@ -1,0 +1,10 @@
+version: '3.5'
+
+services:
+  notebook:
+    image: quay.io/jupyter/scipy-notebook
+    container_name: notebook
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./:/home/jovyan/work
